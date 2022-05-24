@@ -13,8 +13,8 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let wolf = document.querySelector('#dk')
-		    wolf.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
+                    let dk = document.querySelector('#dk')
+		    dk.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
                     this.audio.play();
 			
                   console.log(e)
@@ -36,8 +36,8 @@
                 }.bind(this));
                 this.el.addEventListener('touchstart', function (e) {
 		
-                    let wolf = document.querySelector('#dk')
-		    wolf.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
+                    let dk = document.querySelector('#dk')
+		    dk.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
