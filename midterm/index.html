@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let dk = document.querySelector('#dk')
-		    dk.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
+		    dk.setAttribute('animation-mixer', "clip: IdleAnim; loop: thrice;");
                     this.audio.play();
 			
                   console.log(e)
@@ -37,7 +37,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let dk = document.querySelector('#dk')
-		    dk.setAttribute('animation-mixer', "clip: Scene; loop: thrice;");
+		    dk.setAttribute('animation-mixer', "clip: IdleAnim; loop: thrice;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
