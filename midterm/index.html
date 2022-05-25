@@ -9,7 +9,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("laugh");
+                this.audio = document.querySelector("#laugh");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -68,7 +68,7 @@
       <a-entity event-listener id="dk"  
         gltf-model="#dk" 
         scale=".5 .5 .5" 
-        position = "-5 5 1" 
+        position = "0 0 0" 
         rotation="0 0 0" 
       >
       </a-entity>
