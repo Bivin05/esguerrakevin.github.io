@@ -13,44 +13,44 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let dk = document.querySelector('#dk-model')
-		    dk.setAttribute('animation-mixer', "clip: IdleAnim; loop: repeat;");
+                    let dk = document.querySelector("#dk-model")
+		    dk.setAttribute("animation-mixer", "clip: IdleAnim; loop: repeat;");
                     this.audio.play();
 			
                   console.log(e)
                 }.bind(this));
 		
-                this.el.addEventListener('mouseenter', function (e) {
+                this.el.addEventListener("mouseenter", function (e) {
                     console.log(e)
                 }.bind(this));
 		    
-		 this.el.addEventListener('mouseleave', function (e) {
+		 this.el.addEventListener("mouseleave", function (e) {
 			 console.log(e)
                 }.bind(this));
 		 
 		
-                this.el.addEventListener('touchmove', function (e) {
+                this.el.addEventListener("touchmove", function (e) {
                     //this.audio.play();
 			
                   console.log(e)
                 }.bind(this));
-                this.el.addEventListener('touchstart', function (e) {
+                this.el.addEventListener("touchstart", function (e) {
 		
-                    let dk = document.querySelector('#dk')
-		    dk.setAttribute('animation-mixer', "clip: IdleAnim; loop:repeat;");
+                    let dk = document.querySelector("#dk")
+		    dk.setAttribute("animation-mixer", "clip: IdleAnim; loop:repeat;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
 		    
-		 this.el.addEventListener('touchend', function (e) {
+		 this.el.addEventListener("touchend", function (e) {
 			 console.log(e)
                 }.bind(this));
 		    
 		
-                this.el.addEventListener('animation-finished', function (e) {
+                this.el.addEventListener("animation-finished", function (e) {
 			 console.log(e)
-                    let dk = document.querySelector('dk')
-		    dk.removeAttribute('animation-mixer');
+                    let dk = document.querySelector("dk")
+		    dk.removeAttribute("animation-mixer");
                 }.bind(this));
 		
             }
